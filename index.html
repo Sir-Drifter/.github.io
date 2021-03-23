@@ -10,7 +10,6 @@
 </head>
 <body>
   <h1 class="title">Script&#x20;Injection</h1>
-  <p>Credit for the website goes too:https://examples.insecure.chefsecure.com/examples/script-injection</p>
   <div class="styled-input">
   <input id="input" type="text" required>
   <label>Input</label>
@@ -21,6 +20,8 @@
 </div>
 <hr>
 <p>You typed: <span id="value"></span></p>
+<div></div>
+<p class="Credit">Credit for the website goes too: https://examples.insecure.chefsecure.com/examples/script-injection</p>
 <script>
   /* Mimic a server response since innerHTML won't run scripts.
    * code from https://stackoverflow.com/a/20584396 */
@@ -35,6 +36,7 @@
         nodeScriptReplace( children[i++] );
       }
     }
+
 
     return node;
   }
